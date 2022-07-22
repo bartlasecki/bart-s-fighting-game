@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.stats-container {
+  position: absolute;
+  display: flex;
+  width: 1920px;
+  align-items: center;
+  padding: 20px;
+}
+
+.playerOne-health {
+  background-color: #818cf8;
+  height: 40px;
+  width: 100%;
+}
+
+.playerOne-main {
+  position: relative;
+  /* height: 40px; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.playerOne-box {
+  position: absolute;
+  background: red;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.timer {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Press Start 2P", sans-serif;
+  color: white;
+  border: 4px solid white;
+}
+
+.playerTwo-health {
+  background-color: #818cf8;
+  height: 40px;
+}
+
+.playerTwo-main {
+  position: relative;
+  /* height: 40px; */
+  width: 100%;
+  border-right: 4px solid white;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.playerTwo-box {
+  position: absolute;
+  background: red;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.result-tie {
+  position: absolute;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 150px;
+  display: none;
+}
